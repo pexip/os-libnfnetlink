@@ -1,10 +1,12 @@
 Source: libnfnetlink
 Section: libs
 Priority: extra
-Maintainer: netfilter maintainers <netfilter-maintainers@ned.snow-crash.org>
-Uploaders: Max Kellermann <max@duempel.org>, Alexander Wirt <formorer@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: netfilter maintainers <netfilter-maintainers@ned.snow-crash.org>
+XSBC-Pexip-Original-Uploaders: Max Kellermann <max@duempel.org>, Alexander Wirt <formorer@debian.org>
 Build-Depends: debhelper (>= 5), libtool
 Standards-Version: 3.8.3
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: libnfnetlink0
 Architecture: any

@@ -1,3 +1,9 @@
+libnfnetlink (1.0.0-1pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 24 Dec 2013 21:44:12 +0000
+
 libnfnetlink (1.0.0-1) unstable; urgency=low
 
   [ Max Kellermann ]
