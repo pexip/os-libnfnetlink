@@ -2,15 +2,18 @@ Source: libnfnetlink
 Section: libs
 Priority: extra
 Maintainer: Pexip AS <packaging@pexip.com>
-XSBC-Pexip-Original-Maintainer: netfilter maintainers <netfilter-maintainers@ned.snow-crash.org>
-XSBC-Pexip-Original-Uploaders: Max Kellermann <max@duempel.org>, Alexander Wirt <formorer@debian.org>
-Build-Depends: debhelper (>= 5), libtool
-Standards-Version: 3.8.3
+XSBC-Pexip-Original-Maintainer: Alexander Wirt <formorer@debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, libtool
+Standards-Version: 3.9.4
+Vcs-Git: git://github.com/formorer/pkg-libnfnetlink.git
+Vcs-Browser: https://github.com/formorer/pkg-libnfnetlink
 XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: libnfnetlink0
 Architecture: any
-Depends: ${shlibs:Depends}
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Netfilter netlink library
  libnfnetlink is the low-level library for netfilter related
  kernel/userspace communication. It provides a generic messaging
@@ -21,7 +24,8 @@ Description: Netfilter netlink library
 Package: libnfnetlink0-dbg
 Section: debug
 Architecture: any
-Depends: ${shlibs:Depends}, libnfnetlink0 (= ${binary:Version})
+Pre-Depends: dpkg (>= 1.17.5)
+Depends: libnfnetlink0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: Debugging symbols for libnfnetlink0
  libnfnetlink is the low-level library for netfilter related
  kernel/userspace communication. It provides a generic messaging
@@ -34,8 +38,11 @@ Description: Debugging symbols for libnfnetlink0
 Package: libnfnetlink-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, libnfnetlink0 (= ${binary:Version}),
- pkg-config
+Depends: libnfnetlink0 (= ${binary:Version}),
+         pkg-config,
+         ${misc:Depends},
+         ${misc:Pre-Depends},
+         ${shlibs:Depends}
 Description: Development files for libnfnetlink0
  libnfnetlink is the low-level library for netfilter related
  kernel/userspace communication. It provides a generic messaging
