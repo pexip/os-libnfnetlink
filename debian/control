@@ -6,7 +6,7 @@ XSBC-Pexip-Original-Maintainer: netfilter maintainers <netfilter-maintainers@ned
 XSBC-Pexip-Original-Uploaders: Max Kellermann <max@duempel.org>, Alexander Wirt <formorer@debian.org>
 Build-Depends: debhelper (>= 5), libtool
 Standards-Version: 3.8.3
-XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: libnfnetlink0
 Architecture: any
