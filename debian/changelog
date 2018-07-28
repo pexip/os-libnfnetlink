@@ -1,3 +1,9 @@
+libnfnetlink (1.0.1-3pexip2) pexip; urgency=low
+
+  * Migrate to Stretch
+
+ -- John-Mark Bell <jmb@pexip.com>  Sun, 29 Jul 2018 00:55:38 +0100
+
 libnfnetlink (1.0.1-3pexip1) pexip; urgency=low
 
   * Migrate to Jessie
