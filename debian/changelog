@@ -1,3 +1,40 @@
+libnfnetlink (1.0.2-2) unstable; urgency=medium
+
+  * [1e8f863] d/control: set Rules-Requires-Root: no.
+  * [23f21e4] d/control: remove -dev dependency on ${shlibs:Depends}
+  * [baea709] d/control: add myself to uploaders
+  * [b943106] d/copyright: convert to DEP-5 format
+  * [6e7d7c9] d/*: remove remnants of -dbg package
+  * [494eae9] d/gbp.conf: buildpackage: set pristine-tar to true
+  * [58e2f14] d/gbp.conf: buildpackage: set upstream-signatures to on
+  * [c700a01] d/gbp.conf: dch: set id-length to 7
+  * [7193039] d/changelog: remove trailing white-space
+  * [da4bcfa] d/watch: bump version
+  * [99039a0] d/watch: switch to HTTPS
+  * [c63ee11] d/libnfnetlink0.symbols: add `Build-Depends-Package` field
+  * [abef6eb] d/copyright: add Arturo and me to copyright field for debian/*
+
+ -- Jeremy Sowden <jeremy@azazel.net>  Fri, 08 Apr 2022 14:39:50 +0100
+
+libnfnetlink (1.0.2-1) unstable; urgency=medium
+
+  [ Arturo Borrero Gonzalez ]
+  * [6d7df47] debian/: add gitlab-ci.yml file
+
+  [ Michael Biebl ]
+  * [48db57e] libnftnetlink: use arch:linux-any (Closes: #745159)
+
+  [ Arturo Borrero Gonzalez ]
+  * [efbfa62] libnfnetlink: refresh packaging
+  * [737d01d] New upstream version 1.0.2
+  * [e5f6b25] d/watch: introduce support for PGP
+  * [6331cf2] d/rules: modernize
+  * [4ccd263] libnfnetlink-dev: adjust Pre-Depends
+  * [cb62ced] libnfnetlink: mark as Priority: optional
+  * [a3987b0] libnfnetlink: add symbols file
+
+ -- Arturo Borrero Gonzalez <arturo@debian.org>  Thu, 07 Apr 2022 19:28:41 +0200
+
 libnfnetlink (1.0.1-3) unstable; urgency=medium
 
   * [54caaa4] Handle symlink to directory conversion in a policy conform way.
@@ -62,7 +99,7 @@ libnfnetlink (0.0.41-1) unstable; urgency=low
   * Priority "extra"
 
   [ Alexander Wirt ]
-  * bump standards version 
+  * bump standards version
 
  -- Alexander Wirt <formorer@debian.org>  Thu, 02 Apr 2009 10:18:29 +0200
 
@@ -78,7 +115,7 @@ libnfnetlink (0.0.38-1) unstable; urgency=low
   * new upstream release (Closes: #491884)
 
   [ Alexander Wirt ]
-  * Bump standards version (No changes) 
+  * Bump standards version (No changes)
 
  -- Alexander Wirt <formorer@debian.org>  Tue, 22 Jul 2008 22:56:54 +0200
 
@@ -93,7 +130,7 @@ libnfnetlink (0.0.33-1) unstable; urgency=low
 
 libnfnetlink (0.0.30-2) unstable; urgency=low
 
-  * Build depend on libtool (Closes: #451450) 
+  * Build depend on libtool (Closes: #451450)
 
  -- Alexander Wirt <formorer@debian.org>  Fri, 16 Nov 2007 08:50:07 +0100
 
