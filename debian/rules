@@ -1,8 +1,15 @@
 #!/usr/bin/make -f
+
+ifeq (,$(filter terse,$(DEB_BUILD_OPTIONS)))
 export DH_VERBOSE=1
+configure_opts = --disable-silent-rules
+else
+configure_opts = --enable-silent-rules
+endif
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-DPKG_EXPORT_BUILDFLAGS = 1
-include /usr/share/dpkg/buildflags.mk
 
 %:
 	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(configure_opts)

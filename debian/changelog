@@ -1,3 +1,16 @@
+libnfnetlink (1.0.2-3) unstable; urgency=medium
+
+  * [e748c39] d/rules: remove export of dpkg build flags
+  * [4abd7d2] d/u/signing-key.asc: minimize signing key
+  * [afce643] d/control: remove superfluous build-dep on libtool
+  * [9d67834] d/control: bump Standards-Version to 4.6.2
+  * [d3d3d6d] d/control: update pkg-config dependency to pkgconf
+  * [a49a868] d/control: update `Maintainer:` e-mail address
+  * [8fc4b62] d/control, d/copyright: update my e-mail address
+  * [cc2c08a] d/rules: add support for the `terse` build option
+
+ -- Jeremy Sowden <azazel@debian.org>  Thu, 28 Mar 2024 21:07:48 +0000
+
 libnfnetlink (1.0.2-2+pexip24u3) pexip-bookworm; urgency=medium
 
   * New versioning scheme
