@@ -12,7 +12,7 @@ Rules-Requires-Root: no
 Homepage: https://git.netfilter.org/libnfnetlink
 Vcs-Git: https://salsa.debian.org/pkg-netfilter-team/pkg-libnfnetlink.git
 Vcs-Browser: https://salsa.debian.org/pkg-netfilter-team/pkg-libnfnetlink
-XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
+XS-Pexip-Upstream: http://deb.debian.org/debian/ trixie
 
 Package: libnfnetlink0
 Architecture: linux-any
