@@ -1,3 +1,9 @@
+libnfnetlink (1.0.2-3+pexip25u1) pexip-trixie; urgency=medium
+
+  * Initial trixie build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Tue, 29 Apr 2025 22:36:47 +0100
+
 libnfnetlink (1.0.2-3) unstable; urgency=medium
 
   * [e748c39] d/rules: remove export of dpkg build flags
